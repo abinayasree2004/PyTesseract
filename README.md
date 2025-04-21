@@ -23,7 +23,7 @@ Setup:
 1. Install Tesseract (Windows):
    https://github.com/UB-Mannheim/tesseract/wiki
    Add this to your script:
-   pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+   pytesseract.pytesseract.tesseract_cmd = r'C:\path\to\Tesseract-OCR\tesseract.exe'
 
 2. Install Poppler (Windows):
    https://github.com/oschwartz10612/poppler-windows
@@ -33,13 +33,10 @@ Setup:
 How to Use:
 1. Place your PDF invoice in the folder (e.g., invoice.pdf)
 2. Run the script:
-   python invoice_ocr.py
+   python main.py
 3. Outputs will be in 'output_invoice/' as:
    - Extracted text: page_1.txt, etc.
    - Annotated images: page_1.jpg, etc.
 
 Folder Structure:
-output_invoice/
-├── page_1.jpg
-├── page_1.txt
-└── ...
+output_invoice/...
